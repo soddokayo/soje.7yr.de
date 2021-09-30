@@ -9,7 +9,7 @@ app = Flask(__name__)
 def inputTest(num=None):
     return render_template('form.html', num=numj)
 
-@app.route('/calculate', mehods=['POST'])
+@app.route('/calculate', methods=['POST'])
 def calculate(num=None):
     if request.method == 'POST':
         temp = request.form['num']
