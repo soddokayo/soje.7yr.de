@@ -1,0 +1,19 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SOJE ONLINE</title>
+</head>
+<body>
+	<h1>MongoDB connection test...</h1>
+	<div>
+	<p>연결 성공되면 아래 데이터 표시될거임</p>
+	<p>----------------------------------------</p>
+	{% for i in data %}
+		<p>이름: {{i.name}}</p>
+		<p>내용: {{i.content}}</p>
+	{% endfor %}
+	</div>
+</body>
+</html>
+
